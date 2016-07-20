@@ -1,0 +1,17 @@
+import hashlib, sys
+
+lista = open(sys.argv[1])
+counter = 0
+for line in lista:
+	suma1 = line.split("  ")[0].strip()
+	path = line.split("  ")[1].strip()
+	
+	data = open(path)
+	suma2 = hashlib.sha256(data.read().encode('utf-8')).hexdigest()
+	if suma1==suma2: 
+		print (path + ": DOBRZE")
+	else:
+		print (path + ": NIEPOWODZENIE")
+		counter+=1
+print ("\nUWAGA: " + str(counter) + " policzona suma sie NIE zgadza")
+

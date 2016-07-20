@@ -1,0 +1,11 @@
+from Crypto.PublicKey import RSA
+import sys
+
+rsa_keys = RSA.generate(1024)
+priv_key = rsa_keys.exportKey()
+pub_key = rsa_keys.publickey().exportKey()
+
+with open(sys.argv[1]) as msg:
+	szyfrogram = msg.read()
+
+print(rsa_keys.decrypt(szyfrogram[0]))

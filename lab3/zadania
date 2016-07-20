@@ -1,0 +1,6 @@
+1. Zaimplementuj samodzielnie algorytm generowania strumienia klucza algorytmem RC4 oraz szyfrowania przy jego pomocy. Zweryfikuj dzialanie implementacji na przykladach testowych, np. z wikipedii.
+
+2. Napisz algorytm obliczajacy entropie podanego tekstu.
+
+3. Napisz program przeprowadzajacy atak brutalnej sily na kryptogram z wykorzystaniem wartosci entropii do znalezienia wlasciwego wyniku. Zalóz, ze strumien klucza generowany jest na bazie 2 - literowego hasla skladajacego sie wylacznie z malych liter alfabetu lacinskiego. Zaprezentuj dzialanie na odpowiednio dlugim tekscie w jezyku naturalnym.
+

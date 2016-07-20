@@ -1,0 +1,24 @@
+1. Napisz funkcje wykorzystujaca algorytm Euklidesa do sprawdzenia czy liczby sa wzglednie pierwsze. Napisz funkcje wykorzystujaca algorytm Euklidesa do obliczenia liczby odwrotnej modulo.
+
+WSKAZOWKI:
+1) Wyklad 6.1 slajd 6.
+
+2. Zaimplementuj algorytm szybkiego potegowania w arytmetyce modularnej.
+
+WSKAZOWKI:
+1) Wyklad 6.2 slajd 16.
+
+3. W parach przeprowadz proces szyfrowania, przesylania i odszyfrowywania wiadomosci z wykorzystaniem szyfrowania asymetrycznego.
+
+WSKAZOWKI:
+1) Scenariusz:
+	- Osoba A generuje swoj kryptosystem RSA i zapisuje do 2 plikow swoj klucz prywatny i swoj klucz publiczny. Przesyla plik z kluczem publicznym osobie B.
+	- Osoba B wczytuje plik z kluczem publicznym osoby A i za jego pomoca szyfruje wybrany przez siebie tekst jawny. Przesyla szyfrogram (zapisany w pliku) osobie A.
+	- Osoba A wczytuje plik ze swoim kluczem prywatnym i za jego pomoca odszyfrowuje otrzymana wiadomosc.
+2) Generacja nowego kryptosystemu: <nazwa kryptosystemu> = RSA.generate(<ilosc bitow>), przyjac 1024 bity.
+3) Wyodrebnienie klucza prywatnego: <nazwa kryptosystemu>.exportKey(<schemat zapisu>), przyjac schemat zapisu "PEM".
+4) Wyodrebnienie klucza publicznego: <nazwa kryptosystemu>.publickey().exportKey(<schemat zapisu>), przyjac schemat zapisu "PEM".
+5) Odtworzenie kryptosystemu na bazie wczytywanego klucza: <nazwa kryptosystemu> = RSA.importKey(<ciag znakow klucza>).
+6) Szyfrowanie: encrypted = <nazwa kryptosystemu>.encrypt(<tekst jawny>, ""), encrypted jest krotka, w której wazna jest jedynie 1. wartosc.
+7) Odszyfrowywanie: decrypted = <nazwa kryptosystemu>.decrypt(<tekst zaszyfrowany>), jako tekst zaszyfrowany podstawiamy encrypted[0].
+

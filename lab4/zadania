@@ -1,0 +1,4 @@
+1. Napisz program realizujacy szyfrowanie algorytmami DES i AES w trybach ECB i CBC. Zbadaj wystepowanie powtorzen w szyfrogramach dla tekstow o powtarzajacych sie blokach dla poszczegolnych trybow.
+2. Napisz samodzielnie szyfrowanie w trybie CBC z pomoca trybu ECB i operacji XOR.
+3. Zaproponuj lub podaj istniejacy algorytm przeksztalcania dowolnego hasla na dobry klucz w formacie zgodnym z algorytmem AES. Okresl ile znakow [a-z] nalezy podac, zeby entropia hasla zblizyla sie do 256-bitowego klucza wykorzystywanego w tym algorytmie.
+

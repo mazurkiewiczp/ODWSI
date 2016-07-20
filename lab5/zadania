@@ -1,0 +1,17 @@
+1. Napisz program zgadujacy hasla ukryte za pomoca funkcji crypt(), przechowywane w bazie programu htpasswd. Przyjmij zalozenie, ze hasla sa 3 - znakowe i skladaja sie z samych malych liter.
+
+WSKAZOWKI:
+1) man htpasswd
+2) dokumentacja Pythona -> The Python Standard Library -> 36. Unix Specific Services (do znalezienia wpisujac "python crypt" w google)
+3) tworzenie pliku z baza hasel i dodanie pierwszego uzytkownika: "htpasswd -bcd <nazwa pliku> <nazwa uzytkownika> <haslo uzytkownika>"
+4) dodanie uzytkownika do utworzonego juz pliku z baza hasel: "htpasswd -bd <nazwa pliku> <nazwa uzytkownika> <haslo uzytkownika>"
+5) funkcja crypt() opiera sie na DESie i uzywa soli
+
+2. Przy pomocy wywolania funkcji sha256() z pakietu hashlib odtworz dzialanie polecenia sha256sum -c, czyli kontrole spojnosci plikow.
+
+WSKAZOWKI:
+1) man sha256sum
+2) wyliczenie sumy kontrolnej dla pliku: "sha256sum <nazwa pliku> > <nazwa pliku do ktorego zapisujemy sume kontrolna>"
+3) sprawdzenie sumy kontrolnej: "sha256sum -c <nazwa pliku do ktorego zapisalismy sume kontrolna>"
+
+3. Przygotuj dwa dokumenty (oryginalny i falszywy) o roznej tresci. Napisz program przeprowadajacy atak na funkcje skrotu trivial_hash() dla tych dokumentow. Wykorzystaj paradoks urodzinowy w polaczeniu z metoda bialych znakow.

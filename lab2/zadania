@@ -1,0 +1,5 @@
+1. Napisz program szyfrujacy tekst jawny algorytmem przesuniecia cyklicznego o wybrana liczbe, z obsluga liczb ujemnych i wiekszych od dlugosci alfabetu. Okresl ile razy nalezy uruchomic na swoim wyniku szyfrowanie przesunieciem o wartosci podanej przez prowadzacego (np. 5) zeby otrzymac pierwotny tekst.
+
+2. Za pomoca analizy statystycznej postaraj sie odszyfrowac tekst w jezyku polskim zaszyfrowany algorytmem przesuniecia cyklicznego o nieznanym kluczu. Okresl przesuniecie.
+
+3. Porownaj rozklady statystyczne tekstow w trzech roznych jezykach.
