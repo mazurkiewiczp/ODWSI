@@ -1,2 +1,2 @@
 # ODWSI
-Ćwiczenia laboratoryjne z przedmiotu Ochorna danych w systemach informatycznych
+Ćwiczenia laboratoryjne z przedmiotu Ochorna danych w systemach informatycznych. Semestr IV.
